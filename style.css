@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.Main{
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+}
+
+
+.MyHeader{
+    width: 100%;
+    height: 80px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+
+.logo{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.Content{
+width: 40%;
+color: whitesmoke;
+font-size: 17px;
+font-weight: 600;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+justify-content: space-evenly;
+
+
+}
+
+
+
+.Content>button{
+    display: none;
+}
+
+
+
+
+@media (max-width:500px) {
+
+
+.MyHeader{
+    background-color: red;
+}
+
+.Content>span{
+    display: none;
+}
+
+.Content{
+ 
+    justify-content: end;
+}
+    
+
+.Content>button{
+    display: flex;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    height: 29px;
+    background-color: green;
+    border: none;
+    color: white;
+}
+
+
+
+}
